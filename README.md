@@ -1,4 +1,4 @@
-# Ranibow Printer!
+# Rainbow Printer!
 
 ![screen-gif](./media/rainbow.gif)
 
