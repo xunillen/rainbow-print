@@ -8,7 +8,7 @@ Jednostavno. Potrebno je samo pokrenut _compile.sh_ kako bi se dobio izvršni pr
 ## Kako promijeniti tekst koji se ispisuje?
 
 ### 1. Način (siguran)
-Potrebo je promjeniti vrijednost lokacije na koju pokazuje labela _text_start_
+Potrebno je promijeniti vrijednost lokacije na koju pokazuje labela _text_start_
 
         text_start:
                 .ascii "TestTest321\n\0"
