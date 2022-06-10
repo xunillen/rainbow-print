@@ -20,7 +20,7 @@
 	color_end:
 
 	text_start:
-		.ascii "TestTest321\n\0"
+		.ascii "Vedo je GAY!\n\0"
 	text_end:
 
 	timespec:
@@ -103,14 +103,10 @@ _start:
 
 		text_pointer_reset:
 			go_sleep:
-		                pushl   %ecx    # Spremanje vrijednosti registara na stog
-                		pushl   %edi
-                		pushl   %edx
+				pushal		# Spremanje vrijednosti registara na stog
 				call	sleep
-		                popl    %edx    # Vračanje vrijednosti registara
-	        	        popl    %edi
-		                popl    %ecx
-
+				pushal		# Vračanje vrijednosti registara
+				
 			#movl	ST_ARGV_1(%ebp), %edx	# Posstavimo ponovno pokazivač na
 			movl    $text_start, %edx	# početak teksta
 
