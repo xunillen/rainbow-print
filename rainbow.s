@@ -20,7 +20,7 @@
 	color_end:
 
 	text_start:
-		.ascii "Vedo je GAY!\n\0"
+		.ascii "TestTest321\n\0"
 	text_end:
 
 	timespec:
