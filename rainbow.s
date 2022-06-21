@@ -105,7 +105,7 @@ _start:
 			go_sleep:
 				pushal		# Spremanje vrijednosti registara na stog
 				call	sleep
-				pushal		# Vračanje vrijednosti registara
+				popal		# Vračanje vrijednosti registara
 				
 			#movl	ST_ARGV_1(%ebp), %edx	# Posstavimo ponovno pokazivač na
 			movl    $text_start, %edx	# početak teksta
